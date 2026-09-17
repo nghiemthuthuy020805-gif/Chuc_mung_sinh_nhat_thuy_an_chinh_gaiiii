@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Thúy An 💗</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(circle at 20% 20%, #ffffff 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 30%, #ffffff 0 2px, transparent 3px),
+        linear-gradient(135deg, #ffd6e7, #ffb6d2, #ffc9df);
+
+    background-size: 80px 80px, 120px 120px, cover;
+
+    color: #71394e;
+}
+
+
+/* =========================
+   NỀN TRANG
+========================= */
+
+.background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+/* Những trái tim bay */
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    color: #ff72a7;
+    font-size: 25px;
+
+    animation: fly 8s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes fly {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   KHUNG CHÍNH
+========================= */
+
+.container {
+    position: relative;
+    z-index: 2;
+
+    width: 92%;
+    max-width: 950px;
+
+    margin: 40px auto;
+
+    background: rgba(255,255,255,0.65);
+
+    border: 3px solid white;
+    border-radius: 35px;
+
+    box-shadow:
+        0 20px 60px rgba(171, 67, 110, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    padding: 40px;
+}
+
+
+/* =========================
+   DẢI TRÊN
+========================= */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #ff4f91;
+}
+
+.virgo {
+    background: #fff;
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   TIÊU ĐỀ
+========================= */
+
+.title-small {
+    text-align: center;
+
+    font-size: 23px;
+    letter-spacing: 2px;
+
+    color: #9c5270;
+}
+
+.title {
+    text-align: center;
+
+    font-size: clamp(55px, 10vw, 100px);
+
+    color: #f04f91;
+
+    font-weight: 900;
+
+    margin: 5px 0;
+
+    text-shadow:
+        3px 3px 0 white,
+        6px 6px 0 #ff9fc1;
+
+    transform: rotate(-2deg);
+}
+
+.subtitle {
+    text-align: center;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #753c52;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   KHU VỰC 4 BÉ NA
+========================= */
+
+.banana-area {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    gap: 15px;
+
+    margin: 20px 0 35px;
+}
+
+.banana {
+    position: relative;
+
+    font-size: 75px;
+
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.banana:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.banana:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.banana:nth-child(4) {
+    animation-delay: .6s;
+}
+
+@keyframes bounce {
+
+    0%,100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
+
+.sunglasses {
+    position: absolute;
+
+    top: 23px;
+    left: 17px;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   LỜI CHÚC
+========================= */
+
+.message-box {
+
+    background: #fff7fb;
+
+    border: 3px dashed #ff8eb6;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.message-box p {
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: #ef4c8d;
+    font-weight: 900;
+}
+
+
+/* =========================
+   BÁNH SINH NHẬT
+========================= */
+
+.cake-area {
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+.cake {
+    position: relative;
+
+    width: 250px;
+    height: 170px;
+
+    margin: auto;
+}
+
+.cake-bottom {
+    position: absolute;
+
+    bottom: 0;
+    left: 25px;
+
+    width: 200px;
+    height: 100px;
+
+    background: linear-gradient(
+        #ff91b7,
+        #ff5d98
+    );
+
+    border-radius: 15px 15px 25px 25px;
+
+    box-shadow:
+        inset 0 -12px rgba(180,40,90,.12);
+}
+
+.cream {
+    position: absolute;
+
+    bottom: 75px;
+    left: 25px;
+
+    width: 200px;
+    height: 45px;
+
+    background: #fff;
+
+    border-radius: 50%;
+}
+
+.candle {
+    position: absolute;
+
+    width: 18px;
+    height: 55px;
+
+    background: repeating-linear-gradient(
+        45deg,
+        #fff,
+        #fff 7px,
+        #ff7aa9 7px,
+        #ff7aa9 14px
+    );
+
+    border-radius: 5px;
+
+    bottom: 110px;
+}
+
+.candle:nth-child(1) {
+    left: 70px;
+}
+
+.candle:nth-child(2) {
+    left: 116px;
+}
+
+.candle:nth-child(3) {
+    left: 162px;
+}
+
+.flame {
+    position: absolute;
+
+    width: 18px;
+    height: 25px;
+
+    background: #ffd43b;
+
+    border-radius: 50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    top: -22px;
+    left: 0;
+
+    box-shadow:
+        0 0 20px #ffd43b;
+
+    animation: flame .5s infinite alternate;
+}
+
+@keyframes flame {
+
+    from {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    to {
+        transform: rotate(-45deg) scale(1.2);
+    }
+}
+
+
+/* =========================
+   NÚT MỞ QUÀ
+========================= */
+
+button {
+
+    display: block;
+
+    margin: 30px auto 10px;
+
+    border: none;
+
+    background: #ff5d98;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    padding: 16px 35px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(255,80,140,.3);
+
+    transition: .3s;
+}
+
+button:hover {
+
+    transform: scale(1.08) rotate(-2deg);
+
+    background: #ef3f82;
+}
+
+
+/* =========================
+   LỜI CHÚC BÍ MẬT
+========================= */
+
+#secret {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: #fff;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================
+   TRANG TRÍ
+========================= */
+
+.sticker {
+
+    position: absolute;
+
+    font-size: 50px;
+
+    animation: wiggle 3s infinite;
+}
+
+.star1 {
+    left: 25px;
+    top: 120px;
+}
+
+.star2 {
+    right: 30px;
+    top: 160px;
+}
+
+.gift {
+    right: 25px;
+    bottom: 40px;
+}
+
+.flower {
+    left: 20px;
+    bottom: 35px;
+}
+
+@keyframes wiggle {
+
+    0%,100% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg) scale(1.1);
+    }
+}
+
+
+/* =========================
+   CHỮ CUỐI
+========================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #9a526f;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:600px) {
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    .banana-area {
+        gap: 3px;
+    }
+
+    .banana {
+        font-size: 55px;
+    }
+
+    .sunglasses {
+        font-size: 18px;
+        left: 13px;
+        top: 18px;
+    }
+
+    .subtitle {
+        font-size: 19px;
+    }
+
+    .message-box p {
+        font-size: 17px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HIỆU ỨNG NỀN
+========================= -->
+
+<div class="background">
+
+    <div class="heart" style="left:5%; animation-delay:0s;">♥</div>
+    <div class="heart" style="left:15%; animation-delay:2s;">♡</div>
+    <div class="heart" style="left:30%; animation-delay:4s;">♥</div>
+    <div class="heart" style="left:50%; animation-delay:1s;">♡</div>
+    <div class="heart" style="left:70%; animation-delay:3s;">♥</div>
+    <div class="heart" style="left:90%; animation-delay:5s;">♡</div>
+
+</div>
+
+
+<!-- =========================
+     TRANG CHÍNH
+========================= -->
+
+<div class="container">
+
+
+    <div class="sticker star1">⭐</div>
+
+    <div class="sticker star2">✨</div>
+
+    <div class="sticker gift">🎁</div>
+
+    <div class="sticker flower">🌷</div>
+
+
+    <!-- TOP -->
+
+    <div class="top">
+
+        <div class="logo">
+            💗 4 BÉ NA
+        </div>
+
+        <div class="virgo">
+            ♍ VIRGO GIRL
+        </div>
+
+    </div>
+
+
+    <!-- TITLE -->
+
+    <div class="title-small">
+        🎀 HAPPY BIRTHDAY 🎀
+    </div>
+
+    <div class="title">
+        THÚY AN
+    </div>
+
+    <div class="subtitle">
+        xinh gái moa moa 💋💗
+    </div>
+
+
+    <!-- 4 BÉ NA -->
+
+    <div class="banana-area">
+
+        <div class="banana">
+            🍌
+        </div>
+
+        <div class="banana">
+            🍌
+            <span class="sunglasses">😎</span>
+        </div>
+
+        <div class="banana">
+            🍌
+        </div>
+
+        <div class="banana">
+            🍌
+        </div>
+
+    </div>
+
+
+    <!-- LỜI CHÚC -->
+
+    <div class="message-box">
+
+        <p>
+
+            💌
+
+            <span class="highlight">
+                4 bé na đáng yêu
+            </span>
+
+            <br>
+
+            chính thức gửi lời chúc đến
+
+            <br>
+
+            <span class="highlight">
+                THÚY AN XINH GÁI
+            </span>
+
+            🎂
+
+            <br>
+
+            Chúc bà tuổi mới
+
+            <br>
+
+            ✨ luôn xinh đẹp ✨
+            <br>
+            ✨ luôn vui vẻ ✨
+            <br>
+            ✨ nhiều tiền ✨
+            <br>
+            ✨ bớt overthinking ✨
+            <br>
+            ✨ và ngày càng slay hơn nữa ✨
+
+            <br><br>
+
+            💋 <strong>MOA MOA 💋</strong>
+
+        </p>
+
+    </div>
+
+
+    <!-- BÁNH -->
+
+    <div class="cake-area">
+
+        <div class="cake">
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+
+            <div class="cream"></div>
+
+            <div class="cake-bottom"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <button onclick="openGift()">
+
+        🎁 BẤM VÀO ĐÂY ĐỂ NHẬN QUÀ
+
+    </button>
+
+
+    <!-- SECRET MESSAGE -->
+
+    <div id="secret">
+
+        🥹💗
+
+        <br>
+
+        <strong>
+            THÚY AN ƠI!!!
+        </strong>
+
+        <br><br>
+
+        Tuổi mới chúc bà
+
+        <br>
+
+        💰 tiền vào như nước
+
+        <br>
+
+        💕 tình yêu ngập tràn
+
+        <br>
+
+        ✨ nhan sắc ngày càng lên hương
+
+        <br>
+
+        🧠 thông minh nhưng đừng nghĩ nhiều quá
+
+        <br>
+
+        😎 cá tính thì cứ cá tính
+
+        <br>
+
+        👑 vì bà là bà, không cần giống ai hết!
+
+        <br><br>
+
+        Chúc cô nàng Xử Nữ
+
+        <strong>
+            luôn vui vẻ và hạnh phúc! ♍💗
+        </strong>
+
+        <br><br>
+
+        Và quan trọng nhất...
+
+        <br>
+
+        <strong style="color:#ff4f91;font-size:25px;">
+
+            4 bé na yêu bà rất nhiều 🫶
+
+            <br>
+
+            MOA MOA 💋💋💋
+
+        </strong>
+
+    </div>
+
+
+    <div class="footer">
+
+        Made with 💗 by 4 bé na đáng yêu
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+/* =========================
+   MỞ QUÀ
+========================= */
+
+function openGift() {
+
+    const secret =
+        document.getElementById("secret");
+
+    secret.style.display = "block";
+
+
+    /* Cuộn xuống lời chúc */
+
+    setTimeout(function() {
+
+        secret.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }, 200);
+
+
+    /* Tạo pháo giấy */
+
+    createConfetti();
+
+}
+
+
+/* =========================
+   PHÁO GIẤY
+========================= */
+
+function createConfetti() {
+
+    const symbols = [
+        "💗",
+        "💕",
+        "✨",
+        "🌸",
+        "🎀",
+        "⭐",
+        "💋"
+    ];
+
+
+    for(let i = 0; i < 100; i++) {
+
+        let item =
+            document.createElement("div");
+
+        item.innerHTML =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+        item.style.position = "fixed";
+
+        item.style.left =
+            Math.random() * 100 + "vw";
+
+        item.style.top = "-30px";
+
+        item.style.fontSize =
+            Math.random() * 20 + 15 + "px";
+
+        item.style.zIndex = "9999";
+
+        item.style.pointerEvents = "none";
+
+        let duration =
+            Math.random() * 3 + 2;
+
+        item.style.animation =
+            "confettiFall " +
+            duration +
+            "s linear";
+
+
+        document.body.appendChild(item);
+
+
+        setTimeout(function() {
+
+            item.remove();
+
+        }, duration * 1000);
+
+    }
+
+}
+
+
+/* =========================
+   ANIMATION PHÁO GIẤY
+========================= */
+
+const style =
+document.createElement("style");
+
+style.innerHTML = `
+
+@keyframes confettiFall {
+
+    0% {
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+`;
+
+document.head.appendChild(style);
+
+
+</script>
+
+</body>
+</html>
